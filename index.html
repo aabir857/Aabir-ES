@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Aabir Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width =device-width, initial-scale=1">
+
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+    <body>
+    <section id="banner">
+        <img src="IMAGES/rb_2149244756.png" class="logo">
+        <div class="banner-text">
+            <h1>Welcome To My Website</h1>
+            <p>I am a student in audiovisual studies</p>
+            <div class="banner-btn">
+                <a href="#"> <span></span>I hope u like it</a>
+            </div>
+        </div>
+    </section>
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#AboutMe">About Me</a></li>
+            <li><a href="#picture">Pictures</a></li>
+        </ul>
+    </nav>
+</div>
+       <div id="menuBtn">
+        <img src="IMAGES/MENU.PNG" id="MENU">
+       </div>
+
+    
+       <!--About Me-->
+
+       <section id="AboutMe">
+        <div class="title-text">
+        <p>About Me</p>
+        <h1>WHO I'AM</h1>
+        </div>
+        <div class="AboutMe-box">
+           <div class="AboutMe">
+               <h1>Aabir Eshaimi</h1>
+               <div class="AboutMe-desc">
+                <div class="AboutMe-icon"></div>
+                <div class="AboutMe-text">
+                    <p>I am a student in audiovisual studies, and designer</p>
+                </div>
+               </div>
+           <div class="AboutMe-img">
+               <img src="IMAGES/LL.jpeg">
+
+           </div> 
+         </div>   
+        </div>
+       </section>
+
+       <!--Pictures-->
+
+       <section id="picture">
+        <div class="title-text">
+            <p>Pictures</p>
+            <h1>Sebou River</h1>
+         </div>
+            <div class="picture-box">
+                <div class="single-pictuer">
+                    <img src="IMAGES/AA (1).jpeg"><div id="overlay"></div>
+                </div>
+                <div class="single-pictuer"><div id="overlay"></div>
+                    <img src="IMAGES/II.jpeg"><div id="overlay"></div>
+                </div>
+                <div class="single-pictuer">
+                    <img src="IMAGES/BB.jpeg"><div id="overlay"></div>
+                </div>
+                <div class="single-pictuer">
+                    <img src="IMAGES/RR.jpeg"><div id="overlay"></div>
+                </div>      
+            </div>
+       </section>
+
+       <section id="Copyright">
+            <div class="title-text">
+                <p>Copyright © 2024 Aabir Eshaimi</p>
+        </div>        
+
+       </section>
+        
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var MENU = document.getElementById("MENU")
+
+    sideNav.style.right = "-250px";
+
+
+    menuBtn.onclick = function(){
+        if (sideNav.style.right == "-250px"){
+            sideNav.style.right ="0";
+            MENU.src = "images/CLOSE.png"
+        }
+        else{
+            sideNav.style.right ="-250px";
+            MENU.src = "images/MENU.png";
+        }
+    }
+
+        
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+
+    </body>
+</html>
